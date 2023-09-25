@@ -7,11 +7,14 @@ const cors = require('cors'); // <-- Import cors here
 
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
+var productRouter = require('./routes/product');
+var orderRouters = require('./routes/order');
+var cartRouters = require('./routes/cart');
 
 const mongoose = require('mongoose');
 
 // Connect to MongoDB
-mongoose.connect('mongodb://127.0.0.1:27017/Self-Checkout', {
+mongoose.connect('mongodb+srv://yasithuvin93:mongoyuvin@cluster0.wb8qxlq.mongodb.net/Self-Checkout', {
   useNewUrlParser: true,
   useUnifiedTopology: true
 });
@@ -32,12 +35,24 @@ app.set('view engine', 'jade');
 
 app.use(logger('dev'));
 app.use(express.json());
+
+// Add the logging middleware right after express.json()
+app.use((req, res, next) => {
+  console.log('Received body:', req.body);
+  next();
+});
+
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', indexRouter);
+app.use('/health', indexRouter);
 app.use('/users', usersRouter);
+app.use('/products', productRouter);
+app.use('/order', orderRouters);
+app.use('/cart',cartRouters);
+
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
