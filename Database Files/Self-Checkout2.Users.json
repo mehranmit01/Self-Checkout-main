@@ -1,0 +1,60 @@
+[{
+  "_id": {
+    "$oid": "65047ac60e89d47abf747ac5"
+  },
+  "username": "Paul",
+  "userPassword": "123456",
+  "email": "paul@gmail.com",
+  "userType": "customer",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65047b440e89d47abf747ac8"
+  },
+  "username": "Admin1",
+  "userPassword": "123456",
+  "email": "admin1@gmail.com",
+  "userType": "admin",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6505a08849d778804a0fb1f5"
+  },
+  "username": "Mike",
+  "userPassword": "123456",
+  "email": "mike@gmail.com",
+  "userType": "customer",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6505fb0dcd4a7dce880e3315"
+  },
+  "username": "Jack",
+  "userPassword": "123456",
+  "email": "Jack@gmail.com",
+  "userType": "customer",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6505ffb70f9f0b2c94978a93"
+  },
+  "username": "Bill",
+  "userPassword": "123456",
+  "email": "bill@gmail.com",
+  "userType": "customer",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "650601820f9f0b2c94978b2f"
+  },
+  "username": "David",
+  "userPassword": "111111",
+  "email": "david@gmail.com",
+  "userType": "customer",
+  "__v": 0
+}]

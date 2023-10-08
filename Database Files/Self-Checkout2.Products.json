@@ -1,0 +1,96 @@
+[{
+  "_id": {
+    "$oid": "6504b4e67283d63b5cbd0d93"
+  },
+  "productName": "Coca Cola 2L",
+  "productPrice": 3.2,
+  "productStock": 100,
+  "imageUri": "https://www.divine.lk/cdn/shop/products/coke-500ml_300x300.jpg?v=1635857099",
+  "description": "Updated product description.",
+  "barcode": "1234567890123",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65057dd1092172245fb97f6b"
+  },
+  "productName": "Milo 180ml",
+  "productPrice": 1.8,
+  "productStock": 50,
+  "imageUri": "https://objectstorage.ap-mumbai-1.oraclecloud.com/n/softlogicbicloud/b/cdn/o/products/600-600/115798--01--1644507260.jpeg",
+  "description": "Milo Packet.",
+  "barcode": "8542567898542",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6505f87dcd4a7dce880e32a4"
+  },
+  "productName": "Dove Soap Bar 100g",
+  "productPrice": 2.2,
+  "productStock": 50,
+  "imageUri": "https://kingdomsmarket.com/wp-content/uploads/2021/09/Dove-Soap-Bar-2-Pack-100g.jpg",
+  "description": "Dove moisturizing cream soap bar for soft and smooth skin.",
+  "barcode": "7623459871234",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6505f95fcd4a7dce880e32b9"
+  },
+  "productName": "Heinz Tomato Ketchup 300ml",
+  "productPrice": 3.4,
+  "productStock": 75,
+  "imageUri": "https://cdn.bmstores.co.uk/images/hpcProductImage/imgFull/301253-Heinz-Tomato-Ketchup-300ml1.jpg",
+  "description": "Heinz classic tomato ketchup in a 300ml bottle",
+  "barcode": "1234534564785",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6505ff160f9f0b2c94978a87"
+  },
+  "productName": "Oreo Cookies 150g",
+  "productPrice": 2,
+  "productStock": 45,
+  "imageUri": "https://m.media-amazon.com/images/I/61TPV-1trbS.jpg",
+  "description": "Classic Oreo cookies with rich cream filling.",
+  "barcode": "8723456123456",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6505ff640f9f0b2c94978a8c"
+  },
+  "productName": "Doritos Nacho Cheese 100g",
+  "productPrice": 2.3,
+  "productStock": 75,
+  "imageUri": "https://m.media-amazon.com/images/I/71ufQAQCpFL.jpg",
+  "description": "Crunchy Doritos with a nacho cheese flavor.",
+  "barcode": "8723467234567",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6506dd6e49e403fa8e7939df"
+  },
+  "productName": "Nivea Body Lotion 250ml",
+  "productPrice": 4.5,
+  "productStock": 100,
+  "imageUri": "https://static.beautytocare.com/media/catalog/product/cache/global/image/1300x1300/85e4522595efc69f496374d01ef2bf13/n/i/nivea-express-hydration-48h-body-lotion-250ml.jpg",
+  "description": "Nivea moisturizing body lotion for soft and smooth skin.",
+  "barcode": "8723490567890",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6506e37d49e403fa8e793ad9"
+  },
+  "productName": "Cadbury Dairy Milk 50g",
+  "productPrice": 2.7,
+  "productStock": 50,
+  "imageUri": "https://supersavings.lk/wp-content/uploads/2021/04/Cadbury-dairy-milk-chocolate-50g.jpg",
+  "description": "Smooth and creamy Cadbury Dairy Milk chocolate bar.",
+  "barcode": "8723478345678",
+  "__v": 0
+}]

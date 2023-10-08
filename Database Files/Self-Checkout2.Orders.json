@@ -1,0 +1,340 @@
+[{
+  "_id": {
+    "$oid": "6505889b5603765415d7e4e7"
+  },
+  "userID": {
+    "$oid": "65047ac60e89d47abf747ac5"
+  },
+  "products": [
+    {
+      "productID": {
+        "$oid": "6504b4e67283d63b5cbd0d93"
+      },
+      "quantity": 2,
+      "priceAtOrderTime": 680,
+      "_id": {
+        "$oid": "6505889b5603765415d7e4e8"
+      }
+    },
+    {
+      "productID": {
+        "$oid": "65057dd1092172245fb97f6b"
+      },
+      "quantity": 1,
+      "priceAtOrderTime": 130,
+      "_id": {
+        "$oid": "6505889b5603765415d7e4e9"
+      }
+    }
+  ],
+  "totalAmount": 8.4,
+  "orderStatus": "Paid",
+  "orderDate": {
+    "$date": "2023-09-16T10:51:07.272Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6505accd49d778804a0fb21b"
+  },
+  "userID": {
+    "$oid": "65047ac60e89d47abf747ac5"
+  },
+  "products": [
+    {
+      "productID": {
+        "$oid": "6504b4e67283d63b5cbd0d93"
+      },
+      "quantity": 7,
+      "priceAtOrderTime": 2380,
+      "_id": {
+        "$oid": "6505accd49d778804a0fb21c"
+      }
+    },
+    {
+      "productID": {
+        "$oid": "65057dd1092172245fb97f6b"
+      },
+      "quantity": 1,
+      "priceAtOrderTime": 130,
+      "_id": {
+        "$oid": "6505accd49d778804a0fb21d"
+      }
+    }
+  ],
+  "totalAmount": 5.6,
+  "orderStatus": "Pending",
+  "orderDate": {
+    "$date": "2023-09-16T13:25:33.596Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6505cdacd7dd19ab17966020"
+  },
+  "userID": {
+    "$oid": "6505a08849d778804a0fb1f5"
+  },
+  "products": [
+    {
+      "productID": {
+        "$oid": "65057dd1092172245fb97f6b"
+      },
+      "quantity": 1,
+      "priceAtOrderTime": 130,
+      "_id": {
+        "$oid": "6505cdacd7dd19ab17966021"
+      }
+    }
+  ],
+  "totalAmount": 4.7,
+  "orderStatus": "Paid",
+  "orderDate": {
+    "$date": "2023-09-16T15:45:48.210Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6505fabacd4a7dce880e32df"
+  },
+  "userID": {
+    "$oid": "6505a08849d778804a0fb1f5"
+  },
+  "products": [
+    {
+      "productID": {
+        "$oid": "6505f95fcd4a7dce880e32b9"
+      },
+      "quantity": 1,
+      "priceAtOrderTime": 290,
+      "_id": {
+        "$oid": "6505fabacd4a7dce880e32e0"
+      }
+    },
+    {
+      "productID": {
+        "$oid": "6505f87dcd4a7dce880e32a4"
+      },
+      "quantity": 1,
+      "priceAtOrderTime": 150,
+      "_id": {
+        "$oid": "6505fabacd4a7dce880e32e1"
+      }
+    }
+  ],
+  "totalAmount": 6.6,
+  "orderStatus": "Paid",
+  "orderDate": {
+    "$date": "2023-09-16T18:58:02.242Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6506006d0f9f0b2c94978ab6"
+  },
+  "userID": {
+    "$oid": "6505ffb70f9f0b2c94978a93"
+  },
+  "products": [
+    {
+      "productID": {
+        "$oid": "6505ff160f9f0b2c94978a87"
+      },
+      "quantity": 2,
+      "priceAtOrderTime": 400,
+      "_id": {
+        "$oid": "6506006d0f9f0b2c94978ab7"
+      }
+    },
+    {
+      "productID": {
+        "$oid": "6505f95fcd4a7dce880e32b9"
+      },
+      "quantity": 1,
+      "priceAtOrderTime": 290,
+      "_id": {
+        "$oid": "6506006d0f9f0b2c94978ab8"
+      }
+    }
+  ],
+  "totalAmount": 10.4,
+  "orderStatus": "Paid",
+  "orderDate": {
+    "$date": "2023-09-16T19:22:21.215Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "650601250f9f0b2c94978b09"
+  },
+  "userID": {
+    "$oid": "6505ffb70f9f0b2c94978a93"
+  },
+  "products": [
+    {
+      "productID": {
+        "$oid": "65057dd1092172245fb97f6b"
+      },
+      "quantity": 2,
+      "priceAtOrderTime": 260,
+      "_id": {
+        "$oid": "650601250f9f0b2c94978b0a"
+      }
+    },
+    {
+      "productID": {
+        "$oid": "6504b4e67283d63b5cbd0d93"
+      },
+      "quantity": 1,
+      "priceAtOrderTime": 340,
+      "_id": {
+        "$oid": "650601250f9f0b2c94978b0b"
+      }
+    }
+  ],
+  "totalAmount": 12.5,
+  "orderStatus": "Paid",
+  "orderDate": {
+    "$date": "2023-09-16T19:25:25.875Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "650601f30f9f0b2c94978b70"
+  },
+  "userID": {
+    "$oid": "650601820f9f0b2c94978b2f"
+  },
+  "products": [
+    {
+      "productID": {
+        "$oid": "6504b4e67283d63b5cbd0d93"
+      },
+      "quantity": 3,
+      "priceAtOrderTime": 1020,
+      "_id": {
+        "$oid": "650601f30f9f0b2c94978b71"
+      }
+    },
+    {
+      "productID": {
+        "$oid": "6505f87dcd4a7dce880e32a4"
+      },
+      "quantity": 1,
+      "priceAtOrderTime": 150,
+      "_id": {
+        "$oid": "650601f30f9f0b2c94978b72"
+      }
+    }
+  ],
+  "totalAmount": 11.3,
+  "orderStatus": "Paid",
+  "orderDate": {
+    "$date": "2023-09-16T19:28:51.807Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6506d96749e403fa8e7939d7"
+  },
+  "userID": {
+    "$oid": "65047ac60e89d47abf747ac5"
+  },
+  "products": [
+    {
+      "productID": {
+        "$oid": "6505ff160f9f0b2c94978a87"
+      },
+      "quantity": 1,
+      "priceAtOrderTime": 200,
+      "_id": {
+        "$oid": "6506d96749e403fa8e7939d8"
+      }
+    },
+    {
+      "productID": {
+        "$oid": "6505f95fcd4a7dce880e32b9"
+      },
+      "quantity": 1,
+      "priceAtOrderTime": 290,
+      "_id": {
+        "$oid": "6506d96749e403fa8e7939d9"
+      }
+    }
+  ],
+  "totalAmount": 4.9,
+  "orderStatus": "Pending",
+  "orderDate": {
+    "$date": "2023-09-17T10:48:07.515Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6506dff149e403fa8e793aa1"
+  },
+  "userID": {
+    "$oid": "65047ac60e89d47abf747ac5"
+  },
+  "products": [
+    {
+      "productID": {
+        "$oid": "6505f95fcd4a7dce880e32b9"
+      },
+      "quantity": 1,
+      "priceAtOrderTime": 3.4,
+      "_id": {
+        "$oid": "6506dff149e403fa8e793aa2"
+      }
+    }
+  ],
+  "totalAmount": 3.4,
+  "orderStatus": "Paid",
+  "orderDate": {
+    "$date": "2023-09-17T11:16:01.928Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6506e07449e403fa8e793abe"
+  },
+  "userID": {
+    "$oid": "65047ac60e89d47abf747ac5"
+  },
+  "products": [
+    {
+      "productID": {
+        "$oid": "6505ff640f9f0b2c94978a8c"
+      },
+      "quantity": 1,
+      "priceAtOrderTime": 2.3,
+      "_id": {
+        "$oid": "6506e07449e403fa8e793abf"
+      }
+    },
+    {
+      "productID": {
+        "$oid": "6505ff160f9f0b2c94978a87"
+      },
+      "quantity": 1,
+      "priceAtOrderTime": 2,
+      "_id": {
+        "$oid": "6506e07449e403fa8e793ac0"
+      }
+    }
+  ],
+  "totalAmount": 4.3,
+  "orderStatus": "Paid",
+  "orderDate": {
+    "$date": "2023-09-17T11:18:12.686Z"
+  },
+  "__v": 0
+}]
