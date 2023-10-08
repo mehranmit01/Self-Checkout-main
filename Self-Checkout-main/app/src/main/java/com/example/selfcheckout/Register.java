@@ -42,7 +42,14 @@ public class Register extends AppCompatActivity {
 
             // Check if email and password are not empty
             if(!userEmail.isEmpty() && !userPassword.isEmpty() && !userName.isEmpty() && !confirmPassword.isEmpty()) {
-                registerUser(userName,userPassword,userEmail, "customer");
+
+               if(!userPassword.equals(confirmPassword)){
+                   Toast.makeText(getApplicationContext(), "Your password does not match", Toast.LENGTH_SHORT).show();
+               }else{
+                   registerUser(userName,userPassword,userEmail, "customer");
+
+               }
+
                 //  checkBackend();
             } else {
                 Toast.makeText(getApplicationContext(), "Please enter email and password", Toast.LENGTH_SHORT).show();
@@ -69,7 +76,7 @@ public class Register extends AppCompatActivity {
 
                 if (response.isSuccessful()) {
                     Log.d("BackendCheck", "Response: Registration Success");
-                    Intent intent = new Intent(getApplicationContext(), BottomBar.class);
+                    Intent intent = new Intent(getApplicationContext(), MainActivity.class);
                     startActivity(intent);
 
                     // Display a toast message on the main thread

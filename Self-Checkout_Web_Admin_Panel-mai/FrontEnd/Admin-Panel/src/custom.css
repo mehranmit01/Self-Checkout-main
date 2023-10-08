@@ -1,16 +1,1 @@
 
-.main-content {
-    display: flex;
-    justify-content: center; /* This should center the content horizontally */
-    align-items: center; /* This centers the content vertically */
-    height: 100vh;
-    width: calc(100% - 250px); /* Assuming the side panel is 250px wide */
-    margin-left: 250px; /* Adjust based on your side panel's width */
-    text-align: center; /* This ensures the text inside the container is centered */
-  }
-  
-  .main-content h1 {
-    margin: 0; /* Remove any default margins from the h1 */
-    width: 100%; /* Make the h1 take the full width of its container */
-  }
-  

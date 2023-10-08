@@ -34,13 +34,12 @@
     right: 0;
     bottom: 0;
     left: 0;
-    background-image: url("/dashboard.svg");
-    background-size: 75%;
+    background-image: url("/bg2.svg");
+    background-size: cover;
     background-repeat: no-repeat;
     background-color: #EEEEEE;
     opacity: 0.4;
     z-index: -1;
-    background-position: right bottom;
   }
   
 

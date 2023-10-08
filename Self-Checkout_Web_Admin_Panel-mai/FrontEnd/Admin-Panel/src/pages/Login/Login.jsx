@@ -47,15 +47,15 @@ function App() {
   const [password, setPassword] = useState("");
   const [error, setError] = useState("");
 
-  const handleButtonClick = () => {
+  /*const handleButtonClick = () => {
     setLoading(true);
     setTimeout(() => {
       navigate("/dashboard");
     }, 2000); // 2 seconds delay
-  };
+  };*/
 
   //to run admin panel with backend
-  /* const handleButtonClick = () => {
+  const handleButtonClick = () => {
     // Create the request body
     const requestBody = {
       email: email,
@@ -63,7 +63,7 @@ function App() {
     };
 
     // Make the HTTP POST request
-    fetch("http://localhost:5000/users/admin", {
+    fetch("http://127.0.0.1:5000/users/admin", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -84,7 +84,7 @@ function App() {
       .catch((error) => {
         setError("Server error");
       });
-  };*/
+  };
 
   return (
     <MDBContainer
@@ -161,10 +161,10 @@ function App() {
               onChange={(e) => setPassword(e.target.value)}
             />
 
-            <div className="d-flex justify-content-end mb-4">
+            {/* <div className="d-flex justify-content-end mb-4">
               <a href="!#">Forgot password?</a>
-            </div>
-
+            </div> */}
+  
             <div>
               {loading ? (
                 <div

@@ -9,9 +9,11 @@ import {
   faUsers,
 } from "@fortawesome/free-solid-svg-icons"; // Example icon, you can choose any other icon
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import React from "react";
+import React, { useState } from "react";
 import { Card, Col, Container, Row } from "react-bootstrap";
 import "./Dashboard.css";
+import { useEffect } from "react";
+import axios from 'axios';
 
 library.add(
   faShoppingCart,
@@ -23,25 +25,47 @@ library.add(
 );
 
 function Dashboard() {
+
+  const [product,setproduct] = useState(0)
+  const [Order,setOrder] = useState(0)
+  const [user_c,setuser] = useState(0)
+  const [tot, setTot] = useState(0)
+
+  useEffect(() => {
+    // Make a GET request to an API
+    axios.get('http://localhost:5000/products/count')
+      .then(response => {
+        // setcardData(response.data); // Update the state with the fetched data
+        setproduct(response.data.pro_count)
+        setOrder(response.data.order_count)
+        setuser(response.data.user_count)
+        setTot(response.data.total)
+        console.log(response);
+      })
+      .catch(error => {
+        console.error('Error fetching data:', error);
+      });
+  }, []);
+
   const cardData = [
     {
-      title: "2487",
+      title: product,
       description: "Items in Our Stores",
       iconName: faShoppingCart, // Use the actual icon object
     },
-    { title: "175", description: "Total Orders", iconName: faClipboardList },
+    { title: Order, description: "Total Orders", iconName: faClipboardList },
     {
-      title: "RS.75845",
-      description: "Today Income",
+      title: ` $. ${tot}`,
+      description: "Total Income",
       iconName: faMoneyBillWave,
     },
-    { title: "428", description: "Total Customers", iconName: faUsers },
-    {
-      title: "Income Report",
-      description: "Generate Income Report",
-      iconName: faChartBar,
-    },
-    { title: "History", description: "Order History", iconName: faHistory },
+    { title: user_c, description: "Total Customers", iconName: faUsers },
+    // {
+    //   title: "Income Report",
+    //   description: "Generate Income Report",
+    //   iconName: faChartBar,
+    // },
+    // { title: "History", description: "Order History", iconName: faHistory },
   ];
 
   return (

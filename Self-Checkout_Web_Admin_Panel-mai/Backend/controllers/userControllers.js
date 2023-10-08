@@ -61,15 +61,24 @@ const registerUser = async (req, res) => {
 };
 
 
+const testEndpoint = async (req, res) => {
+    try {
+        res.status(200).json({ message: 'success' });
+    } catch (error) {
+        res.status(500).json({ message: 'Server error', error: error.message });
+    }
+};
+
 // User Login
 const loginUser = async (req, res) => {
     try {
         const { email, password } = req.body;
+        console.log(req.body);
 
         // Find the user by email
         const user = await Users.findOne({ email });
         if (!user) {
-            return res.status(400).json({ message: 'Invalid email or password' });
+            return res.status(405).json({ message: 'Invalid email or password'+email });
         }
 
         // Check the user type
@@ -79,21 +88,43 @@ const loginUser = async (req, res) => {
 
         // Check the password
         if (user.userPassword !== password) { // In a real-world scenario, you'd compare the hashed password
-            return res.status(400).json({ message: 'Invalid email or password' });
+            return res.status(408).json({ message: 'Invalid email or password' });
         }
 
+        const userDetails = user.toObject(); // Convert the Mongoose document to a plain JavaScript object
+        delete userDetails.userPassword;
+
         // If everything is okay, send a success response
-        res.json({ message: 'User logged in successfully' });
+        res.json({ message: 'User logged in successfully', user: userDetails });
 
     } catch (error) {
         res.status(500).json({ message: 'Server error', error: error.message });
     }
 };
 
+// Delete a product
+const deleteUser = async (req, res) => {
+    try {
+        const userId = req.params.userId; 
+
+        // Find the product by ID and delete it
+        const result = await Users.deleteOne({ _id: userId });
+        
+        if (result.deletedCount === 0) {
+            return res.status(404).json({ message: 'User not found' });
+        }
+
+        res.json({ message: 'User deleted successfully' });
+    } catch (error) {
+        res.status(500).json({ message: 'Server error', error: error.message });
+    }
+};
 
 module.exports = {
     getAllUsers,
     adminLogin,
     registerUser,
-    loginUser
+    loginUser,
+    testEndpoint,
+    deleteUser
 };

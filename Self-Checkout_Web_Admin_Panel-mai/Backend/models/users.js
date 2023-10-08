@@ -6,10 +6,6 @@ const AutoIncrementFactory = require('mongoose-sequence');
 
 // Define the User schema
 const userSchema = new mongoose.Schema({
-  userID: {
-    type: Number,
-    unique: true
-  },
   username: {
     type: String,
     required: true
@@ -26,7 +22,7 @@ const userSchema = new mongoose.Schema({
   userType: {
     type: String,
     required: true,
-    enum: ['customer', 'admin', 'otherPossibleTypes'] // Adjust this array based on the user types you have
+    enum: ['customer', 'admin'] // Adjust this array based on the user types you have
   }
 });
 
